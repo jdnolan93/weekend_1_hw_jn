@@ -30,6 +30,15 @@ def find_pet_by_name(pets, name):
         if pet["name"] == name:
             return pet
 
+def remove_pet_by_name(pets, name):
+    delete_pet = None
+    delete_pet = find_pet_by_name(pets, name)
+    for pet in pets["pets"]:
+        if pet["name"] == name:
+            delete_pet = pet
+    pets["pets"].remove(delete_pet)
+
+
 
 
 
