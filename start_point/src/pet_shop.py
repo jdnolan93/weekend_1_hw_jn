@@ -25,13 +25,10 @@ def get_pets_by_breed(pets, breed):
             breed_amount.append(pet["breed"])
     return breed_amount
 
-def test_all_pets_by_breed__not_found(pets, breed):
-    breed_amount = []
+def find_pet_by_name(pets, name):
     for pet in pets["pets"]:
-        if pet["breed"] == breed:
-            breed_amount.append(pet["breed"])
-    return breed_amount
-
+        if pet["name"] == name:
+            return pet
 
 
 
