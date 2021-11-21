@@ -8,6 +8,8 @@ def add_or_remove_cash(total_cash, value_integer):
     total_cash["admin"]["total_cash"] += value_integer
     return total_cash["admin"]["total_cash"]
     
+def get_pets_sold(pets_sold):
+    return pets_sold["admin"]["pets_sold"]
 
     
 
