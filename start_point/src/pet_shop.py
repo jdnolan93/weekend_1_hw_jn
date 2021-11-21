@@ -38,6 +38,14 @@ def remove_pet_by_name(pets, name):
             delete_pet = pet
     pets["pets"].remove(delete_pet)
 
+def add_pet_to_stock(pets, new_pet):
+    pets["pets"].append(new_pet)
+
+def get_customer_cash(customers):
+    return customers["cash"]
+
+
+
 
 
 
